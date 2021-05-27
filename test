@@ -1,0 +1,22 @@
+$(function(){
+    console.log('AGS Helper activated');
+
+    const email = 'firstname.lastname+@stressmailams.lab.nordigy.ru';
+
+    const links = [
+
+        //Format to add new records (brands/sections/scenaios):
+        //['Brand short name'],             - ID for logo and short brand name for search (ctrl+F). Used in images Map. Do not rename. Or rename here, in Map and in function below.
+        //['Header'],                       - subsection name (Essential, Standard, etc.)
+        //['Scenario_title', 'Scenario'],   - 'Scenario_title' used in code as links[id][0]; 'Scenario' used in code as links[id][1].
+
+        ['Favorites'],
+
+        ['RingCentral'],
+		['US','office.paid(28,1,email=' + email + ')'],
+		['CA','office.paid(48,1,brand=3610,email=' + email + ')'],
+		['UK','office.paid(98,1,brand=3710,email=' + email + ')'],
+		['AU','office.paid(78,1,brand=5010,email=' + email + ')'],
+		['EU_Ireland','office.paid(68,1,brand=2010,contractedcountryid=107,email=' + email + ')'],
+		['SG','office.paid(279,1,brand=2010,pm=inv,contractedCountryId=188,email=' + email + ')'],
+		['FedRAMP','fedramp.paid(980,1,email=' + email + ')'],
